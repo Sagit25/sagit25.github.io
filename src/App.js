@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <section className="column-container">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavigationBar />
         <section className="row-container">
           <SideBar />
