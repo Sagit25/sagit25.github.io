@@ -12,16 +12,16 @@ import './App.css';
 function App() {
   return (
     <section className="column-container">
-      <Router>
+      <Router basename='/#'>
         <NavigationBar />
         <section className="row-container">
           <SideBar />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/cv" element={<CV />}/>
-            <Route path="/note" element={<Note />} />
-            <Route path="/txt" element={<TXT />} />
+            <Route path="/#/login" element={<Login />} />
+            <Route path="/#/cv" element={<CV />}/>
+            <Route path="/#/note" element={<Note />} />
+            <Route path="/#/txt" element={<TXT />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </section>
