@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.header-line {
+  border: 0;
+  width: 100%;
+  height: 2px;
+  background: gray;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
