@@ -1,19 +1,13 @@
-name: deploy
+ name: deploy
 
 on:
   push:
     branches:
-<<<<<<< HEAD
       - master
       - main
   pull_request:
     branches:
       - master
-=======
-      - main
-  pull_request:
-    branches:
->>>>>>> e86392cedf5d0cbcaec9ebcb36c08d57c0b41114
       - main
   workflow_dispatch:
 
@@ -43,7 +37,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-<<<<<<< HEAD
 
-=======
->>>>>>> e86392cedf5d0cbcaec9ebcb36c08d57c0b41114
